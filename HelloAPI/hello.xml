@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="hello" path="/api/hello" id="f99460cb-3656-44d4-926e-76d4dd4be7ef" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="hello" path="/api/hello" id="f99460cb-3656-44d4-926e-76d4dd4be7ef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="f99460cb-3656-44d4-926e-76d4dd4be7effileName">hello</con:setting>
   </con:settings>
@@ -15,6 +15,7 @@
       <con:request/>
       <con:originalUri>http://localhost/api/hello</con:originalUri>
       <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
