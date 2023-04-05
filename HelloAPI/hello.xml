@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="hello" path="/api/hello" id="f99460cb-3656-44d4-926e-76d4dd4be7ef" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f99460cb-3656-44d4-926e-76d4dd4be7effileName">hello</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="6005e44a-9c99-4a1e-bc59-84299f0e2620" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="509d3be8-900e-46c1-af58-45a1eaaed604" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://localhost:8080</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://localhost/api/hello</con:originalUri>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>
