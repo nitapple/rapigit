@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="9237a98d-d9dd-4638-93a2-8a1b32b7b44d" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TestCase1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="9237a98d-d9dd-4638-93a2-8a1b32b7b44d" keepSession="false" name="TestCase1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="9237a98d-d9dd-4638-93a2-8a1b32b7b44dfileName">TestCase1</con:setting>
   </con:settings>
-  <con:testStep type="restrequest" name="REST Request" id="2d56aa98-d02c-4b38-8579-a0aa6e6e8c73">
+  <con:testStep id="2d56aa98-d02c-4b38-8579-a0aa6e6e8c73" name="REST Request" type="restrequest">
     <con:settings/>
-    <con:config service="HelloAPI" resourcePath="/api/hello" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="REST Request" id="509d3be8-900e-46c1-af58-45a1eaaed604" mediaType="application/json">
+    <con:config xsi:type="con:RestRequestStep" methodName="Method 1" resourcePath="/api/hello" service="HelloAPI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest id="509d3be8-900e-46c1-af58-45a1eaaed604" mediaType="application/json" name="REST Request">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
         <con:endpoint>http://localhost:8080</con:endpoint>
         <con:request/>
         <con:originalUri>http://localhost/api/hello</con:originalUri>
-        <con:assertion type="Valid HTTP Status Codes" id="4e4d0494-967b-4376-9698-c98e2464b2b6" name="Valid HTTP Status Codes">
+        <con:assertion id="4e4d0494-967b-4376-9698-c98e2464b2b6" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
             <codes>200</codes>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="47e733c1-3337-4c8f-b60a-c09581aca4f0" name="Response SLA">
+        <con:assertion id="47e733c1-3337-4c8f-b60a-c09581aca4f0" name="Response SLA" type="Response SLA Assertion">
           <con:configuration>
             <SLA>200</SLA>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="JsonPath Match" id="422b5cb2-c9d5-4840-8533-151c8ee6508f" name="Match content of [response]">
+        <con:assertion id="422b5cb2-c9d5-4840-8533-151c8ee6508f" name="Match content of [response]" type="JsonPath Match">
           <con:configuration>
             <path>$['response']</path>
             <content>"world"</content>

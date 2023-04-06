@@ -3,7 +3,7 @@
   <con:settings>
     <con:setting id="7fa367f4-9ced-4295-900a-6694aa94f4a1fileName">HelloAPI</con:setting>
   </con:settings>
-  <con:definitionCache type="TEXT" rootPart="HelloAPI.json">
+  <con:definitionCache rootPart="HelloAPI.json" type="TEXT">
     <con:part>
       <con:url>HelloAPI.json</con:url>
       <con:content>{"openapi":"3.0.1","info":{"title":"HelloAPI","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/api/hello":{"get":{"responses":{"default":{"description":"Default response"}}}}}}</con:content>
